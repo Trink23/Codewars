@@ -4,6 +4,7 @@ import time
 # This is a sample Python script.
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from ScrapeHTMLPage import scrapHTML
 from Search_on_google import get_results
 from Search_on_google_WithAPI import google_query
 from findUniq import find_uniq
@@ -52,5 +53,6 @@ if __name__ == '__main__':
     for result in my_results:
         my_results_list.append(result['link'])
         print(result['link'])
+    scrapHTML('https://www.ultimatetennisstatistics.com/playerProfile?playerId=4742')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
