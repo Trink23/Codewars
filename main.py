@@ -5,6 +5,7 @@ import time
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from ScrapeHTMLPage import scrapHTML
+from ScrapeJSPage import scrapeJSpage
 from Search_on_google import get_results
 from Search_on_google_WithAPI import google_query
 from findUniq import find_uniq
@@ -41,7 +42,7 @@ if __name__ == '__main__':
     print(find_uniq(array2))
     print(square_sum(array2))
     #print(get_middle("of"))
-    #get_results("dog")
+    get_results("dog")
     my_results_list = []
     api_key = "AIzaSyDO3CLtcqRqhAj3zbUGhhjhGd1DCIO3uo4"
     cse_id = "1295ae6f880b36834"
@@ -54,5 +55,6 @@ if __name__ == '__main__':
         my_results_list.append(result['link'])
         print(result['link'])
     scrapHTML('https://www.ultimatetennisstatistics.com/playerProfile?playerId=4742')
+    scrapeJSpage('https://www.ultimatetennisstatistics.com/playerProfile?playerId=4742')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
