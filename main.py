@@ -42,7 +42,7 @@ if __name__ == '__main__':
     print(find_uniq(array2))
     print(square_sum(array2))
     #print(get_middle("of"))
-    get_results("dog")
+    #get_results("dog")
     my_results_list = []
     api_key = "AIzaSyDO3CLtcqRqhAj3zbUGhhjhGd1DCIO3uo4"
     cse_id = "1295ae6f880b36834"
